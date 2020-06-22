@@ -1,7 +1,7 @@
 # SpChat
 Chat relay service that can be used to integrate Bright Pattern Call Center with several chat providers - VKontakte, Telegram, Viber, Facebook (current version no longer works), WeChat, WhatsApp (via Infobip).
 
-##Configure
+## Configure
 
 Application uses 3 environment variables to start:
 
@@ -11,7 +11,7 @@ PORT  — port used by server
 WEB_URL  — server url
 ```
 
-###Configuration File
+### Configuration File
 ```json
 {
     "spchat": {
@@ -20,7 +20,7 @@ WEB_URL  — server url
                 "appId": "<SP App ID>",
                 "tenant": "<SP Tenant URL>",
                 "host": "<SP Hostname>",
-                "ssl": <true | false>
+                "ssl": "<true | false>"
             }
         },
         "routes": {
@@ -28,7 +28,7 @@ WEB_URL  — server url
         }
     },
 
-    <Configuration specific to Chat Provider>,
+    "": "<Configuration specific to Chat Provider>",
 
     "messages": {
         "___FILL_FORM":     "+ Please fill out this form: {{url}}",
@@ -42,54 +42,54 @@ WEB_URL  — server url
 }
 ```
 
-###VK Configuration
+### VK Configuration
 ```json
     "vk": {
-        "groupAccessToken": <VK Group Access Token>,
-        "adminUserLogin": <VK Admin User Login>,
-        "adminUserPassword": <VK Admin User Password>,
-        "groupId": <VK Group ID>,
-        "confirmationCode": <VK Confirmation Code>
+        "groupAccessToken": "<VK Group Access Token>",
+        "adminUserLogin": "<VK Admin User Login>",
+        "adminUserPassword": "<VK Admin User Password>",
+        "groupId": "<VK Group ID>",
+        "confirmationCode": "<VK Confirmation Code>"
     }
 ```
-###Telegram Configuration
+### Telegram Configuration
 ```json
    "telegram":{
-       "comment": <an optional comment string>,
-       "token": <Telegram token>
+       "comment": "<an optional comment string>",
+       "token": "<Telegram token>"
    }
 ```
 
-###Viber Configuration
+### Viber Configuration
 ```json
     "vb": {
-        "authToken": <Viber auth token>,
-        "name": <Viber account name>,
-        "avatarUrl": <Viber avatar URL>
+        "authToken": "<Viber auth token>",
+        "name": "<Viber account name>",
+        "avatarUrl": "<Viber avatar URL>"
     }
 ```
 
-###Facebook Configuration
+### Facebook Configuration
 ```json
     "fb":{
-        "verifyToken": <FB verify token>,
-        "pageAccessToken": <FB page access token>
+        "verifyToken": "<FB verify token>",
+        "pageAccessToken": "<FB page access token>"
     },
 ```
 
-###WeChat Configuration
+### WeChat Configuration
 ```json
    "wc": {
-        "appId": <WeChat app ID>,
-        "appSecret": <WeChat app secret>
+        "appId": "<WeChat app ID>",
+        "appSecret": "<WeChat app secret>"
     }
 ```
 
-###WhatsApp Configuration (via Infobip)
+### WhatsApp Configuration (via Infobip)
 ```json
    "wa": {
-        "scenarioKey": <Infobip scenario key>,
-        "apiBaseUrl": <Infobip base URL>,
-        "apiKey": <Infobip API URL>
+        "scenarioKey": "<Infobip scenario key>",
+        "apiBaseUrl": "<Infobip base URL>",
+        "apiKey": "<Infobip API URL>"
     }
 ```
