@@ -90,6 +90,6 @@ WEB_URL  — server url
    "wa": {
         "scenarioKey": "<Infobip scenario key>",
         "apiBaseUrl": "<Infobip base URL>",
-        "apiKey": "<Infobip API URL>"
+        "apiKey": "<Infobip API key>"
     }
 ```
